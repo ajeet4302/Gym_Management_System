@@ -2,7 +2,7 @@
 <%@ page import="dao.MemberDAO, dao.TrainerDAO" %>
 <%@ page import="java.util.List" %>
 <%
-    // Fetch members and trainers counts
+    
     MemberDAO memberDao = new MemberDAO();
     TrainerDAO trainerDao = new TrainerDAO();
     
@@ -14,7 +14,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Admin Dashboard</title>
-<link rel="stylesheet" href="css/style.css"> <!-- optional external CSS -->
+<link rel="stylesheet" href="css/style.css"> 
 <style>
 body {
     font-family: Arial, sans-serif;
@@ -99,35 +99,35 @@ section {
 </nav>
 
 <section>
-    <!-- Members Card -->
+  
     <div class="card">
         <h2>Total Members</h2>
         <p><strong><%= totalMembers %></strong></p>
         <a href="viewMembers">View Members</a>
     </div>
 
-    <!-- Trainers Card -->
+   
     <div class="card">
         <h2>Total Trainers</h2>
         <p><strong><%= totalTrainers %></strong></p>
         <a href="viewTrainers">View Trainers</a>
     </div>
 
-    <!-- Add Member Card -->
+   
     <div class="card">
         <h2>Add Member</h2>
         <p>Create new gym member</p>
         <a href="addMember.jsp">Add Member</a>
     </div>
 
-    <!-- Add Trainer Card -->
+    
     <div class="card">
         <h2>Add Trainer</h2>
         <p>Create new trainer profile</p>
         <a href="addTrainer.jsp">Add Trainer</a>
     </div>
 
-    <!-- Workout Plans Card -->
+  
     <div class="card">
         <h2>Workout Plans</h2>
         <p>Professional Level workout plans</p>

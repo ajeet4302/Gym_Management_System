@@ -1,0 +1,8 @@
+util\HibernateUtil.class
+dao\MemberDAO.class
+servlet\DeleteMemberServlet.class
+servlet\UpdateMemberServlet.class
+servlet\AddMemberServlet.class
+servlet\ViewMemberServlet.class
+model\Member.class
+servlet\EditMemberServlet.class

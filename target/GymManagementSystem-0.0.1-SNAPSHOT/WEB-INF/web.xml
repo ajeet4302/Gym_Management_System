@@ -1,0 +1,75 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+ http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+ version="4.0">
+
+<welcome-file-list>
+<welcome-file>index.jsp</welcome-file>
+</welcome-file-list>
+
+<!-- Add Member -->
+
+<servlet>
+<servlet-name>AddMember</servlet-name>
+<servlet-class>servlet.AddMemberServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>AddMember</servlet-name>
+<url-pattern>/addMember</url-pattern>
+</servlet-mapping>
+
+
+<!-- View Members -->
+
+<servlet>
+<servlet-name>ViewMember</servlet-name>
+<servlet-class>servlet.ViewMemberServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>ViewMember</servlet-name>
+<url-pattern>/viewMembers</url-pattern>
+</servlet-mapping>
+
+
+<!-- Delete Member -->
+
+<servlet>
+<servlet-name>DeleteMember</servlet-name>
+<servlet-class>servlet.DeleteMemberServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>DeleteMember</servlet-name>
+<url-pattern>/deleteMember</url-pattern>
+</servlet-mapping>
+
+
+<!-- Edit Member -->
+
+<servlet>
+<servlet-name>EditMember</servlet-name>
+<servlet-class>servlet.EditMemberServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>EditMember</servlet-name>
+<url-pattern>/editMember</url-pattern>
+</servlet-mapping>
+
+
+<!-- Update Member -->
+
+<servlet>
+<servlet-name>UpdateMember</servlet-name>
+<servlet-class>servlet.UpdateMemberServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>UpdateMember</servlet-name>
+<url-pattern>/updateMember</url-pattern>
+</servlet-mapping>
+
+</web-app>
